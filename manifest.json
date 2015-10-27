@@ -1,0 +1,32 @@
+{
+    "name": "com.cortexpowered.apps.html5-test",
+    "version": "1.0.0",
+    "displayName": "HTML5 Test",
+    "description": "Test application for HTML5 assets",
+    "author": "Cortex",
+    "email": "support@cortexpowered.com",
+    "homepage": "http://www.cortexpowered.com",
+    "type": "application",
+    "assets": {
+        "icon128": "",
+        "icon256": "./app_assets/icon256.png",
+        "icon512": "",
+        "screenshot1": "./app_assets/screenshot1.png",
+        "screenshot2": "",
+        "screenshot3": "",
+        "screenshot4": "",
+        "screenshot5": ""
+    },
+    "parameters": [
+        {
+            "name": "cortex.html5-test.urls",
+            "default": "http://cortex-apps.s3.amazonaws.com/get-covered-multi.zip http://cortex-apps.s3.amazonaws.com/get-covered.zip http://cortex-apps.s3.amazonaws.com/behr-weather.zip http://cortex-apps.s3.amazonaws.com/tropicana.zip",
+            "description": "A space separated list of HTML5 app urls"
+        },
+        {
+            "name": "cortex.html5-test.duration",
+            "default": "7500",
+            "description": "View duration in milliseconds."
+        }
+    ]
+}
