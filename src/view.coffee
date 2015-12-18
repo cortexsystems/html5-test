@@ -61,6 +61,7 @@ class View
       iframe.onload = =>
         iframe.contentWindow.onerror = (msg, url, line, col, error) ->
           console.error "#{url}:#{line}:#{col} - #{msg}", error
+        window.Cortex.app.injectLiteApi(id, iframe)
         resolve nid
       iframe.onerror = reject
       iframe.setAttribute 'src', "file://#{index}"
